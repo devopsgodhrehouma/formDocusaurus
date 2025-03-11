@@ -1,0 +1,43 @@
+-------------------------------------------------------------------
+00 - Introduction
+-------------------------------------------------------------------
+
+Bienvenue dans cette formation ! 
+
+Nous allons explorer ensemble l'utilisation du prompt engineering et de l'IA générative. 
+
+Nous utiliserons le framework Docusaurus pour développer un site de documentation moderne et interactif
+Par exemple, nous allons donner les outils pour créer un site de formation  sur le language Python.
+
+Pour bien démarrer avec Docusaurus, voici les outils essentiels à installer 
+(Node.js, npm, Curso AI, Git):
+
+1. Node.js et npm
+- Téléchargez et installez Node.js depuis : https://nodejs.org 
+- npm est inclus avec Node.js
+- Vérifiez l'installation avec les commandes :
+
+
+  node --version
+  npm --version
+  npx --version
+
+
+2. Curso AI
+- Téléchargez l'exécutable depuis : https://curso.ai/download
+- Installez l'application en suivant les instructions
+- Lancez Curso AI depuis votre menu démarrer
+
+3. Git
+- Téléchargez et installez Git depuis : https://git-scm.com/downloads
+- Vérifiez l'installation avec :
+
+  git --version
+
+
+4. Compte AWS (Optionnel)
+- Créez un compte gratuit sur : https://aws.amazon.com
+- Suivez les étapes d'inscription
+- Conservez vos identifiants de connexion en lieu sûr
+
+Une fois ces outils installés, vous êtes prêt à créer votre premier projet Docusaurus !

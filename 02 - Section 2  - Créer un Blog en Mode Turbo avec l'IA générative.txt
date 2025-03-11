@@ -1,0 +1,149 @@
+-------------------------------------------------------------------
+02 - Section 2  - Créer un Blog en Mode Turbo avec l'IA générative
+-------------------------------------------------------------------
+
+
+***********************************************************************************
+🗂️ Partie 1 : Comprendre la structure du projet 
+***********************************************************************************
+
+La structure d'un projet Docusaurus est organisée de manière logique pour faciliter la gestion du contenu :
+
+
+/docs
+- Ce dossier contient toute la documentation principale
+- Les fichiers .md (markdown) ou .mdx (markdown avec des composants React) sont automatiquement convertis en pages
+- La structure des dossiers définit la hiérarchie de la documentation
+- Chaque fichier commence par un frontmatter (métadonnées) en YAML
+
+
+/blog  
+- Dossier dédié aux articles de blog
+- Les articles sont des fichiers .md ou .mdx
+- Le nom du fichier définit la date de publication (YYYY-MM-DD-titre.md)
+- Les articles sont automatiquement listés par date
+- Pas besoin de modifier sidebar.ts manuellement
+
+Pour ajouter un nouveau blog :
+1. Créer un fichier .md dans le dossier /blog
+2. Nommer le fichier avec la date : YYYY-MM-DD-mon-titre.md
+3. Ajouter le frontmatter au début :
+
+   ---
+   title: Mon titre
+   authors: [mon-nom]
+   tags: [tag1, tag2]
+   ---
+ 
+ 
+4. Écrire le contenu en Markdown
+5. Le blog sera automatiquement ajouté à la liste des articles
+
+Docusaurus gère automatiquement :
+- La génération des pages
+- La navigation
+- Les métadonnées 
+- Le tri par date
+- Les tags
+- Les auteurs
+
+
+
+
+
+
+***********************************************************************************
+🗂️ Partie 2 : Créez un nouveau blog sur les outils de l'IA générative avec cursor ai
+***********************************************************************************
+
+Pour créer un nouveau blog sur les outils de l'IA générative avec Cursor AI :
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+📝1.1 : Créer le fichier markdown 
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+1. Dans le dossier /blog, créez un nouveau fichier nommé : 
+   2024-01-15-outils-ia-generative.md
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+📝1.2 : Ajouter le frontmatter 
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+2. Ajoutez le frontmatter suivant :
+
+   ---
+   title: Les Meilleurs Outils d'IA Générative pour les Développeurs
+   authors: [votre-nom]
+   tags: [ia, intelligence-artificielle, outils, cursor-ai]
+   ---
+
+   Par exemple :
+
+   ---
+   slug: les-meilleurs-outils-d-ia-generative
+   title: Les Outils d'IA Générative
+   authors: [slorber, yangshun]
+   tags: [ia, intelligence-artificielle, outils, cursor-ai]
+   ---
+
+Remarque :
+- Le slug est généré automatiquement à partir du titre si vous ne le spécifiez pas
+- Le slug est utilisé pour générer la page web (endpoint dans la barre d'adresse du navigateur)
+- Les auteurs sont définis dans le fichier authors.yml
+- Les tags sont définis dans le fichier tags.yml
+- si l'auteur n'est pas spécifié dans authors.yml, vous aurez un message d'erreur dans la console
+
++++++++++++++++++++++++++++++++++++++++++++++++++++
+📝 3.1 : Rédigez le contenu de votre article 
++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+3. Rédigez le contenu de votre article, par exemple :
+# Les Meilleurs Outils d'IA Générative pour les Développeurs
+
+- Saisir Ctl+ K 
+- Écrire une série de Prompts pour créer un blog sur les outils de l'IA générative 
+
+🌟 Exemple de prompt : 🌟
+✨ Laissez-vous guider par ces prompts soigneusement élaborés ✨
+
+------------------------------------------------------------------------------------
+✍️  Prompt 1 pour créer un blog sur les outils de l'IA générative
+------------------------------------------------------------------------------------
+Rédige un article sur l'intelligence artificielle générative en 2025. 
+L'article doit aborder les évolutions récentes, 
+les avancées technologiques marquantes et les tendances actuelles. 
+
+------------------------------------------------------------------------------------
+✍️  Prompt 2 pour inclure des exemples concrets d'applications en 2025
+------------------------------------------------------------------------------------
+Inclue des exemples concrets d'applications en 2025, 
+comme les nouveaux outils de création de contenu, 
+les innovations dans le domaine de la santé, 
+et les projets artistiques générés par l'IA. 
+
+------------------------------------------------------------------------------------
+✍️  Prompt 3 pour ajouter une analyse des impacts sur le marché du travail et la société, 
+ainsi que les enjeux éthiques liés à son adoption.
+------------------------------------------------------------------------------------
+Ajoute une analyse des impacts sur le marché du travail et la société, 
+ainsi que les enjeux éthiques liés à son adoption. 
+Conclus par une réflexion sur les perspectives d'avenir pour les années à venir.
+
+
+------------------------------------------------------------------------------------
+✍️  Prompt 4 pour ajouter une conclusion générale sur les perspectives d'avenir pour les années à venir.
+------------------------------------------------------------------------------------
+Ajoute une conclusion générale sur les perspectives d'avenir pour les années à venir.
+
+
+
+🗂️ Partie 4 : Sauvegardez le fichier - Docusaurus générera automatiquement la page web
+4. Sauvegardez le fichier - Docusaurus générera automatiquement la page web
+
+🗂️ Partie 5 : Vérifiez le résultat en local avec :
+5. Vérifiez le résultat en local avec :
+
+   npm run start
+
+
+Votre blog sera accessible à l'adresse : http://localhost:3000/blog/outils-ia-generative

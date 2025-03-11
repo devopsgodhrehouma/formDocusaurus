@@ -1,0 +1,39 @@
+-------------------------------------------------------------------
+01 - Section 1 - Créer votre Projet Docusaurus en un Éclair
+-------------------------------------------------------------------
+
+Pour créer votre projet Docusaurus, exécutez ces 3 commandes dans l'ordre :
+
+***********************************************************************************
+🗂️ Partie 1 : Créer le dossier makeelastics et le projet Docusaurus :
+***********************************************************************************
+1. Allez dans le dossier de votre choix (par exemple : Bureau) et créez un nouveau projet Docusaurus :
+npx create-docusaurus@latest projet_python classic
+
+
+
+***********************************************************************************
+🗂️ Partie 2 : Allez dans le dossier makeelastics :
+***********************************************************************************
+2. Allez dans le dossier makeelastics :
+cd projet_python 
+
+
+
+***********************************************************************************
+🗂️ Partie 3 : Lancez le serveur de développement :
+***********************************************************************************
+3. Lancez le se rveur de développement :
+npx docusaurus start ou npm start
+
+
+***********************************************************************************
+Pour résumer: 
+***********************************************************************************
+
+
+npx create-docusaurus@latest projet_reseaux_neurones classic
+cd projet_reseaux_neurones
+npm start
+
+

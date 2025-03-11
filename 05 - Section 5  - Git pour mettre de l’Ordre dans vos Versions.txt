@@ -1,0 +1,338 @@
+-------------------------------------------------------------------
+05 - Section 5  - Git pour mettre de l’Ordre dans vos Versions
+-------------------------------------------------------------------
+
+Installer git  ==> https://phoenixnap.com/kb/how-to-install-git-windows
+
+
+***********************************************************************************
+🗂️ Partie 1 : Pourquoi utiliser Git pour gérer les versions ?
+***********************************************************************************
+
+Lorsque vous travaillez avec l'IA générative et les prompts, il est crucial de pouvoir revenir en arrière si quelque chose ne fonctionne pas comme prévu. Voici pourquoi Git est essentiel :
+
+- Un prompt mal conçu peut générer du code qui casse votre application Docusaurus
+- L'IA peut produire des modifications non désirées dans vos fichiers
+- Vous pouvez vouloir comparer différentes versions de votre documentation
+
+
+
+***********************************************************************************
+🗂️ Partie 2 : Comment utiliser Git pour sauvegarder vos versions
+***********************************************************************************
+
+1. Initialisez Git dans votre projet (si ce n'est pas déjà fait) :
+git init
+git status 
+
+
+
+2. Configurez votre nom d'utilisateur et votre adresse e-mail :
+git config --global user.email "you@example.com" 
+git config --global user.name "Your Name"
+git config --local user.email "you@example.com"
+git config --local user.name "Your Name"
+
+- par exemple :
+git status 
+git config --global user.email "formationselasticaws@gmail.com" 
+git config --global user.name "SkillFlowCoach"
+git config --local user.email "formationselasticaws@gmail.com"
+git config --local user.name "SkillFlowCoach"
+
+
+
+3. Ajoutez vos fichiers à la zone de sauvegarde :
+git add .
+
+
+4. Committez vos modifications :
+git commit -m "Version 1 - version initiale"
+
+
+
+5. Vous pouvez maintenant revenir en arrière si nécessaire :
+git log 
+git checkout <commit_id>
+
+
+
+
+***********************************************************************************
+🗂️  Partie 3: effectuer le push de votre projet sur github
+***********************************************************************************
+
+git add remote origin <adresse_github>
+git remote -v
+git branch -M main
+git push origin main
+
+
+
+
+***********************************************************************************
+🗂️ Partie 4 : effectuer des modifications sur votre projet sur github 
+et tester la restauration (backup) d'une version antérieure suite à une erreur
+***********************************************************************************
+
+Par exemple : 
+
+
+
+4.1 - écrire un nouveau prompt pour changer le titre de la page d'accueil
+✍️ Prompt pour modifier le titre de la page d'accueil
+------------------------------------------------------------------------------------
+Je souhaite modifier le titre de la page d'accueil de mon site Docusaurus.
+Voici mes besoins :
+
+1. Modifier le titre principal pour qu'il soit : "Formation Complète Docusaurus & IA"
+2. Ajouter un sous-titre attractif qui mentionne l'utilisation de l'IA générative
+3. Garder le style et la mise en page actuels
+4. S'assurer que les modifications sont compatibles avec le thème Docusaurus
+
+Le fichier à modifier se trouve dans : src/pages/index.js
+Merci de proposer les modifications nécessaires tout en préservant la structure existante.
+
+
+git status 
+git add .
+git commit -m "Version 2 - Modification du titre de la page d'accueil"
+git push origin main
+git log
+
+
+
+4.2 -  écrire un nouveau prompt pour casser le site accidentellement et tester le backup avec git checkout
+------------------------------------------------------------------------------------
+✍️ Prompt pour tout casser le site et tester le checkout
+------------------------------------------------------------------------------------
+Je souhaite faire des modifications majeures sur mon site Docusaurus pour tester le système de versioning Git.
+Voici les changements à effectuer :
+
+1. Supprimer tous les styles CSS personnalisés
+2. Changer toutes les couleurs en rouge vif (#FF0000)
+3. Modifier la taille de police de tous les textes à 72px
+4. Remplacer tous les titres par "ERREUR 404"
+5. Supprimer toutes les images et les remplacer par des GIFs animés
+6. Ajouter des animations clignotantes partout
+7. Changer la disposition de tous les éléments en position: absolute
+
+Le but est de créer un chaos visuel complet pour ensuite pouvoir tester la restauration avec git checkout.
+
+Fichiers à modifier :
+- src/css/custom.css
+- src/pages/index.js
+- src/theme/Layout.js
+- tous les fichiers de style
+
+💀 ⛔ 🚫 ⚠️ Ces modifications vont complètement détruire l'apparence du site, parfait pour tester le système de versioning ! ⚠️ 🚫 ⛔ 💀
+
+
+
+4.3 -  tester le backup avec git checkout
+------------------------------------------------------------------------------------
+git log  (Ceci vous donne la liste des commits, c'est le commit_id que vous cherchez)
+git checkout <commit_id>
+testez le site et constatez que tout est remis en ordre. Votre backup est opérationnel.
+npm start ou npx docusaurus start
+
+
+
+4.4 -  valider le backup 
+------------------------------------------------------------------------------------
+
+git log 
+
+
+
+commit 49be295c5f80b553686f5e8bc8ab41d3f47d55e8 (HEAD -> main)
+Author: SkillFlowCoach <formationselasticaws@gmail.com>
+Date:   Sun Jan 12 15:02:04 2025 -0500
+
+    Version3 - version chaotique
+	
+
+
+commit 4fd72bb625638c75ee5b503934ec874381f1c374
+Author: SkillFlowCoach <formationselasticaws@gmail.com>
+Date:   Sun Jan 12 14:57:19 2025 -0500
+
+    Version2 -modification du titre
+	
+	
+	
+	
+commit 33fbadad16af2b792b501a5ec17cf04be27bce83 (sauvegarde-version, haythem)
+Author: SkillFlowCoach <formationselasticaws@gmail.com>
+Date:   Sun Jan 12 14:54:05 2025 -0500
+
+    Version 1 - version initiale
+(base)
+
+
+
+
+
+git checkout 33fbadad16af2b792b501a5ec17cf04be27bce83
+git switch -c branche2
+git branch 
+
+==> testez le site 
+git switch main ==> testez le site 
+git switch branche2 ==> testez le site 
+git switch main ==> testez le site 
+
+
+
+
+
+
+
+
+
+Solution 1 pour supprimer les dernières modifications  (1 seule branche)
+git log --oneline -n 1
+git checkout 33fbadad16af2b792b501a5ec17cf04be27bce83
+git branch -f main HEAD
+git switch main
+
+
+#### Explications : **Forcer la branche principale à pointer sur cette version**
+Si tu veux que `main` devienne exactement la version actuelle :
+
+
+
+
+
+#### Solution 2 : **Créer une branche temporaire puis fusionner**
+Si tu veux éviter des conflits, fais ceci :
+
+git switch -c sauvegarde-version
+git switch main
+git merge sauvegarde-version
+
+Puis supprime la branche de sauvegarde si tout est bon :
+
+git branch -d sauvegarde-version
+
+
+
+
+
+Finalement , on doit faire ceci pour envoyer les mises à jour.
+
+---
+
+### Envoyer la mise à jour vers le dépôt distant :**
+Si tu travailles avec un dépôt distant (comme GitHub, GitLab) :
+
+git push origin main --force
+
+⚠️ **Attention :** L’option `--force` réécrit l’historique sur le dépôt distant. Utilise-la si tu es sûr.
+
+---
+
+### **Résumé rapide :**
+- **`git branch -f main HEAD`** force la branche `main` à pointer sur le commit actuel.
+- Ensuite, fais `git switch main` pour retourner sur `main`.
+- **Pousse avec `git push --force`** si tu veux rendre cela permanent sur le dépôt distant.
+
+
+
+
+
+
+-----------------------------------
+Bonnes pratiques :
+-----------------------------------
+
+
+- Garder les  versions stable sur votre branche main 
+- Chaque fois que vous voulez développer une nouvelle fonctionnalité risquée (créer un chatboot par exemple),
+je dois créer une autre branche et travailler sur cette branche. 
+- Une fois que je suis satisfait des résultats je fais un merge avec la branche principale.
+ 
+
+
+
+
+
+- Je vous propose un exemple de workflow Git.
+- Ce script suppose que vous avez déjà initialisé un dépôt Git :
+
+```bash
+# Assurez-vous d'être sur la branche principale (main)
+git checkout main
+
+# Mettez à jour la branche principale pour avoir les dernières modifications
+git pull origin main
+
+# Créez une nouvelle branche pour la fonctionnalité risquée (exemple : créer un chatbot)
+git checkout -b feature/chatbot
+
+# Travaillez sur la nouvelle branche
+# (Ajoutez ou modifiez vos fichiers, puis enregistrez les changements)
+git add .
+git commit -m "Ajout des fichiers pour le chatbot"
+
+# Une fois satisfait des résultats, basculez à nouveau sur la branche principale
+git checkout main
+
+# Mettez à jour la branche principale avec les derniers changements distants (par sécurité)
+git pull origin main
+
+# Fusionnez la branche "feature/chatbot" avec la branche principale
+git merge feature/chatbot
+
+# (Facultatif) Supprimez la branche feature/chatbot si elle n'est plus nécessaire
+git branch -d feature/chatbot
+
+# Poussez les changements vers le dépôt distant
+git push origin main
+```
+
+### Explications
+1. **`git checkout -b feature/chatbot`** : Crée une nouvelle branche à partir de la branche principale pour travailler sur la nouvelle fonctionnalité.
+2. **`git add` et `git commit`** : Enregistrez vos changements sur la branche de fonctionnalité.
+3. **`git merge feature/chatbot`** : Fusionne les changements approuvés dans la branche principale.
+4. **`git branch -d feature/chatbot`** : Supprime la branche locale après la fusion, si elle n'est plus nécessaire.
+5. **`git push origin main`** : Poussez vos changements locaux sur la branche principale distante.
+
+Ce workflow garantit que la branche principale reste stable et que les fonctionnalités risquées sont développées isolément jusqu'à validation
+
+
+
+
+
+
+***********************************************************************************
+🗂️ Partie 5 : Comment comparer différentes versions de votre documentation
+***********************************************************************************
+
+1. Listez les commits :
+git log
+
+
+2. Comparez deux commits :
+git diff <commit_id1> <commit_id2>
+
+
+
+
+
+
+***********************************************************************************
+🗂️ Partie 6 : Résumé comment restaurer une version spécifique
+***********************************************************************************
+
+1. Listez les commits :
+git log
+
+2. comparer deux commits
+git diff <commit_id1> <commit_id2>
+
+3. Restaurez une version spécifique :
+git checkout <commit_id>
+
+
+

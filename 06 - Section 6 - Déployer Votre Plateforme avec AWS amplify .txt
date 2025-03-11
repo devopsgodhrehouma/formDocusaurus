@@ -1,0 +1,109 @@
+-------------------------------------------------------------------
+06 - Section 6 - Déployer Votre Plateforme avec AWS amplify 
+-------------------------------------------------------------------
+
+***********************************************************************************
+🗂️ Partie 1 : Prérequis pour le déploiement
+***********************************************************************************
+
+Avant de commencer le déploiement, assurez-vous d'avoir :
+
+1. Un compte AWS (Amazon Web Services)
+2. Le CLI AWS installé et configuré sur votre machine
+3. Votre projet Docusaurus versionné sur GitHub
+4. Node.js et npm installés
+
+
+***********************************************************************************
+🗂️ Partie 2 : Configuration d'AWS Amplify
+***********************************************************************************
+
+Préparation du site Docusaurus
+1. Cloner le projet Docusaurus localement :
+   git clone <url_du_repository>
+   cd <nom_du_projet>
+
+   
+2. Installer les dépendances :
+   npm install
+
+
+3. Vérifier que le site fonctionne localement 
+   npm run start
+   
+Vous pouvez visualiser votre site sur http://localhost:3000.
+
+
+***********************************************************************************
+🗂️ Partie 3 : Configuration d'AWS Amplify
+***********************************************************************************
+
+1. Connectez-vous à la console AWS
+
+2. Recherchez "Amplify" dans la barre de recherche
+
+3. Cliquez sur "New App" puis "Host Web App"
+
+4. Choisissez GitHub comme fournisseur de code source
+
+5. Sélectionnez votre repository GitHub contenant votre projet Docusaurus
+
+6. Autoriser AWS Amplify à accéder au repository :
+   - Suivez les instructions pour connecter votre compte GitHub ou autre service.
+   - Choisissez le repository et la branche contenant le projet Docusaurus.
+
+7. Cliquez sur "Next" pour continuer.
+
+8. Dans la configuration du build, utilisez les paramètres suivants :
+
+- Build command : npm run build
+- Start command : npm run start
+- Build directory : build
+
+
+9. AJoutez ce fichier amplify.yml à la racine de votre projet :
+
+
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install
+    build:
+      commands:
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+
+
+
+
+***********************************************************************************
+🗂️ Partie 4 : Déploiement
+***********************************************************************************
+
+1. Cliquez sur "Save and Deploy".
+2. AWS Amplify démarre automatiquement le déploiement.
+3. Surveillez les logs pour vérifier que le processus se termine sans erreurs.
+
+
+***********************************************************************************
+🗂️ Partie 5 : Gestion continue et mises à jour automatiques
+***********************************************************************************
+
+
+Mises à jour automatiques :
+À chaque push sur la branche principale (ou celle spécifiée), Amplify détectera les changements et redéploiera le site automatiquement.
+
+
+Conseils supplémentaires
+
+- Logs : Utilisez la console Amplify pour consulter les logs en cas d’erreur.
+- Cache : Si le site ne se met pas à jour, videz le cache du navigateur ou forcez une actualisation avec Ctrl+F5.
+

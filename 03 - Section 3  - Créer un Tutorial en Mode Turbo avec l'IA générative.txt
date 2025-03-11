@@ -1,0 +1,102 @@
+-------------------------------------------------------------------
+03 - Section 3  - Créer un Tutorial en Mode Turbo avec l'IA générative
+-------------------------------------------------------------------
+
+
+***********************************************************************************
+🗂️ Partie 1 : Comprendre la structure du dossier /docs  
+***********************************************************************************
+   - Exploration des dossiers et fichiers essentiels de la documentation Docusaurus.  
+   - Identifier la hiérarchie et le rôle des fichiers Markdown et _category_.json.  
+
+
+***********************************************************************************
+🗂️ Partie 2 : Modifier l'ordre des liens dans la barre latérale (sidebar)  
+***********************************************************************************
+   - Revoir la configuration du fichier sidebars.js.  
+   - Inverser l'ordre d'apparition de deux liens pour ajuster la navigation utilisateur.
+
+
+***********************************************************************************
+🗂️ Partie 3 : Ajouter de la documentation sur l'IA générative  
+***********************************************************************************
+   - Créer un fichier Markdown décrivant l'IA générative (nommé generative.md).  
+   - Inclure un frontmatter YAML clair pour assurer la bonne indexation et le bon affichage dans la barre latérale.
+
+
+***********************************************************************************
+🗂️ Partie 4 : Ajouter de la Documentation sur le Prompt-Engineering (Dossier et Sous-Dossiers)
+***********************************************************************************
+   - Créer une structure organisée pour la documentation sur le prompt-engineering avec un dossier principal et plusieurs sous-dossiers.
+
+
+
+***********************************************************************************
+🗂️  Annexes :
+***********************************************************************************
+
+
+
+
+
+
+
+
+
+
+
+***********************************************************************************
+🗂️  Annexe 3 pour comprendre comment concevoir un bon prompt 
+***********************************************************************************
+
+
+
+------------------------------------------------------------------------------------
+✍️  Prompt 1 simple pour créer un fichier markdown pour la documentation sur l'IA générative
+------------------------------------------------------------------------------------
+Crée un fichier markdown (generative.md) pour la documentation sur l'IA générative dans le dossier /docs .  
+Le fichier doit respecter le format Markdown et la structure de Docusaurus avec un frontmatter YAML 
+
+
+
+
+
+------------------------------------------------------------------------------------
+✍️  Prompt 2 plus raffiné pour créer un fichier markdown pour la documentation sur l'IA générative
+------------------------------------------------------------------------------------
+
+Je souhaite créer une nouvelle documentation sur l'IA générative.  
+Important : Le projet utilise Docusaurus.  
+- Nom du fichier : generative.md  
+- Structure similaire : basée sur le fichier intro.md.  
+Assurez-vous que la page est correctement nommée et bien intégrée dans la structure existante dans /docs.
+==> Cela met en avant les points essentiels de manière claire et concise.
+
+
+
+
+
+
+***********************************************************************************
+Annexe 4 pour comprendre comment concevoir un bon prompt 
+***********************************************************************************
+
+------------------------------------------------------------------------------------
+✍️  Prompt 1 simple pour créer un dossier types-de-prompts avec des sous-catégories
+------------------------------------------------------------------------------------
+Crée un dossier (types-de-prompts) avec des sous categories pour un projet Docusaurus dans le dossier /docs .  
+Les fichiers dans le doossier doivent respecter le format Markdown et la structure de Docusaurus avec un frontmatter YAML 
+N'oublie pas le fichier _category_.json
+
+
+
+
+------------------------------------------------------------------------------------
+✍️  Prompt 2 plus raffiné pour créer un dossier types-de-prompts avec des sous-catégories
+------------------------------------------------------------------------------------
+Crée un dossier nommé types-de-prompts dans le répertoire /docs d'un projet Docusaurus.  
+Le dossier doit contenir des sous-catégories organisées en fichiers Markdown (.md) respectant la structure suivante :
+
+1. Chaque fichier doit inclure un frontmatter en YAML avec des métadonnées (title, description, etc.).  
+2. Ajoute un fichier _category_.json pour définir le nom de la catégorie, sa position, et une description claire.
+3. Veille à ce que chaque fichier Markdown soit compatible avec la navigation Docusaurus.

@@ -1,0 +1,440 @@
+---------------------------------------------------------------------------------------------
+04 - Section 4 - Personnalisez en Minutes  Économisez des Mois de Travail avec les Prompts IA
+---------------------------------------------------------------------------------------------
+
+
+
+🎯 ✨ Comment concevoir un bon prompt ? ✨ 🎯
+
+
+
+
+
+
+
+
+🗂️ Partie 1 : Avant d'écrire un prompt :
+
+
+
+    1.1 - Préciser la page à modifier :
+        - Par exemple : la page principale correspondant à cette adresse ou cette route : http://localhost:3000/  
+
+    1.2 - Rappeler le contexte :
+        - Par exemple : il s'agit d'un projet Docusaurus.  
+
+    1.3 - Donner des précisions sur le style :
+
+        - Par exemple : Crée un design époustouflant avec des animations fluides et des transitions élégantes. Le visuel doit être ultra-moderne, avec :  
+        - Un style 3D esthétiquement bien présenté.   
+        - Des dégradés subtils et des ombres portées légères  
+        - Une typographie soignée et parfaitement lisible  
+        - Des micro-interactions engageantes pour enrichir l'expérience utilisateur  
+        - Une palette de couleurs harmonieuse et contemporaine  
+        - Une mise en page aérée et équilibrée  
+        - L'objectif est de créer une expérience utilisateur inoubliable, qui captive instantanément les visiteurs et les encourage à explorer davantage le contenu.  
+
+
+    1.4 - Boostez votre prompt :
+        - Par exemple : Agir comme un designer professionnel avec 30 ans d'expérience  
+    
+    1.5 - Voici le plan de formation (fais le avec des cercles)
+        
+----------------------------------------------------------------	
+		- Par exemple plan de formation 1 : 
+----------------------------------------------------------------
+
+            1. Introduction à Python  
+            2. Bases du Langage Python  
+            3. Fonctions et Modules  
+            4. Gestion des Fichiers  
+            5. Structures de Données Essentielles  
+            6. Programmation Orientée Objet (POO)  
+            7. Librairies Utiles pour les Projets  
+            8. Projet Final  
+
+----------------------------------------------------------------
+		- ou par exemple plan de formation 2 :
+----------------------------------------------------------------
+		
+		Le Prompt Engineering, IA générative, Integromate et Make Integromat
+		
+			1. Introduction à l'automatisation et découverte de make (Integromat) 
+			2. Introduction à l'IA générative 
+			3. Automatisation Avancée   
+			4. Initiation au Prompt Engineering 
+			5. Optimisation des Prompts
+			6. Projets Pratiques
+			7. Finalisation et Stratégies de Monétisation   
+			8. Création de Landing Page avec Kajabi 
+			9. Création d'un Funnel de Vente Complet pour Générer des Revenus
+			
+----------------------------------------------------------------
+		- ou par exemple formation 3 : 
+----------------------------------------------------------------
+		
+		Formation sur les Réseaux de Neurones
+			1. Introduction aux Réseaux de Neurones
+			2. Le Perceptron 
+			3. Les Couches dans un Réseau de Neurones
+			4. Hyperparamètres et Fonctionnement d’un Modèle de Deep Learning  
+			5. Paramètres d'Entrée et de Sortie 
+			6. Architecture des Couches du Réseau  
+			7. Fonctions d'Activation par Couche
+			8. Fonction de Coût (Loss Function) 
+			9. Taux d'Apprentissage (Learning Rate)
+			10. Nombre d'Epochs
+			11. Optimiseur
+			12. Projet Final
+
+
+
+
+    1.6 - Ajouter des éléments supplémentaires  (si nécessaire)
+        - Par exemple : Ajouter des exemples concrets d'applications similaires pour s'en inspirer
+        - Préciser les contraintes techniques :
+        - Par exemple : Compatibilité navigateurs requise
+        - Performance attendue
+        - Accessibilité souhaitée
+        - Responsive design nécessaire
+
+        - Définir le ton et le style de communication :
+        • Professionnel mais accessible
+        • Vocabulaire adapté au public cible
+        • Messages clairs et concis
+
+        - Spécifier les éléments de marque à respecter :
+        • Charte graphique
+        • Logo et iconographie
+        • Police de caractères
+        • Palette de couleurs
+
+        - Indiquer les fonctionnalités prioritaires :
+        • Navigation intuitive
+        • Temps de chargement optimisé 
+        • Interactions fluides
+        • Animations subtiles
+
+
+
+
+
+
+
+
+
+
+
+
+🗂️ Partie 2 : Écriture du prompt :
+
+
+
+--------------------------------------------------------------------------------
+✍️ Prompt 1 - Créer un prompt pour modifier la page d'accueil selon notre besoin
+--------------------------------------------------------------------------------
+
+
+- Page à modifier : Page principale du projet accessible via la route : http://localhost:3000/  
+- Contexte : Ce projet est construit avec Docusaurus
+- Précisions sur le style : Crée un design époustouflant et moderne avec :  
+    - Animations fluides et transitions élégantes pour une navigation immersive.  
+    - Style 3D esthétique avec des éléments interactifs visuellement impressionnants.  
+    - Dégradés subtils et ombres portées légères pour un rendu visuel sophistiqué.  
+    - Typographie soignée et lisible avec des titres accrocheurs et un corps de texte confortable à lire.  
+    - Micro-interactions engageantes (effets de survol, clics dynamiques) pour enrichir l’expérience utilisateur.  
+    - Palette de couleurs harmonieuse et contemporaine en utilisant des tons modernes et apaisants.  
+    - Mise en page aérée et équilibrée, mettant en avant chaque section sans surcharge visuelle.  
+
+
+- Objectif : Captiver instantanément les visiteurs dès leur arrivée sur la page, les incitant à découvrir davantage le contenu grâce à un visuel attractif et mémorable.  
+- Boost du Prompt : Imagine que tu es un designer UI/UX professionnel avec 30 ans d'expérience et que tu travailles sur un projet phare pour une grande entreprise technologique visant à impressionner les investisseurs.  
+
+
+- Plan de formation avec des cercles interactifs :  
+
+Ajoute une présentation animée du plan de formation suivante :  
+
+----------------------------------------------------------------
+===> AJOUTEZ ICI un des 3 plans de formations proposés (formation 1 ou 2 ou 3)
+----------------------------------------------------------------
+
+
+----------------------------------------------------------------
+✍️ Prompt 2 - Ajouter des liens cliquables sur la page d'accueil vers les catégories
+----------------------------------------------------------------
+
+
+- Page à modifier : Page principale du projet accessible via la route :http://localhost:3000/  
+- Contexte : Le projet utilise Docusauruset vise à offrir une navigation fluide et immersive à travers des liens interactifs en forme de cercles cliquablessur la page d’accueil.
+- Précisions sur les Liaisons Cliquables :
+- Chaque cercle représente une étape du plan de formation.  
+- Lorsqu’un cercle est cliqué, l'utilisateur doit être redirigé vers la catégorie correspondante sous /docs/{nom-de-la-categorie}.  
+- Le style des liens doit être interactif avec :
+  - Effet de zoom léger au survol.
+  - Transition de couleurindiquant le clic réussi.
+  - Animation d’apparition des cerclesen séquence fluide lors du chargement de la page.
+
+
+- Création des Catégories : Crée automatiquement des catégories correspondantes dans la section /docs/.  
+- Exemple des routes à générer :  
+
+
+------------------------------------------------------------------------------------
+===> AJOUTEZ ICI un des 3 plans de formations proposés (formation 1 ou 2 ou 3) 
+------------------------------------------------------------------------------------
+
+
+- Détails de l’Animation de Navigation : 
+    - Les cercles doivent avoir une disposition en grille fluide ou un carrousel horizontal avec des animations synchronisées.  
+    - Chaque lien de catégoriedoit être directement cliquable et responsivepour mobile et desktop.
+
+
+- Boost du Prompt 🚀
+    - Imagine que tu es un expert en développement front-end spécialisé React/Docusaurus avec une solide expérience en design interactif. 
+    - Ton objectif est de créer une navigation intuitiveet d’implémenter rapidement les pages de documentation associées.
+
+
+
+
+----------------------------------------------------------------
+✍️ Prompt 3 - Ajouter des catégories manquantes sur la page d'accueil
+----------------------------------------------------------------
+
+🎯 Option 1 - Automatisation Complète :
+
+Si vous voulez tout automatiser en un seul prompt :  
+
+- Crée automatiquement toutes les catégories restantes avec les routes et rends chaque lien interactif sur la page d’accueil, en suivant le modèle précédent pour une navigation fluide.
+
+🎯 Option 2 :  Plutôt écrire 8 prompts courts (raffinés) et efficaces pour demander l’ajout progressif des catégories manquantes sans répétition excessive :
+
+
+----------------------------------------------------------------
+===> 
+
+- Attention cet exemple s'applique uniquement pour la formation 1 en python. 
+- Vous pouvez personnaliser votre formation de la même façon
+----------------------------------------------------------------
+
+
+1. Ajout de la 2ᵉ catégorie :  
+- Ajoute la catégorie 'Bases du Langage Python' avec la route /docs/bases-langage-python et rends le lien cliquable sur la page d’accueil.
+
+2. Ajout de la 3ᵉ catégorie :  
+- Ajoute la catégorie 'Fonctions et Modules' avec la route /docs/fonctions-modules et rends le lien interactif sur la page principale.
+
+3. Ajout de la 4ᵉ catégorie :  
+- Crée la catégorie 'Gestion des Fichiers' à la route /docs/gestion-des-fichiers et active le clic sur le cercle correspondant.
+
+4. Ajout de la 5ᵉ catégorie :  
+- Intègre la catégorie 'Structures de Données Essentielles' sur la route /docs/structures-de-donnees et lie le cercle interactif.
+
+5. Ajout de la 6ᵉ catégorie :  
+- Ajoute la catégorie 'Programmation Orientée Objet (POO)' avec la route /docs/poo et rends le lien cliquable sur la page d’accueil.
+
+6. Ajout de la 7ᵉ catégorie :  
+- Crée la catégorie 'Librairies Utiles pour les Projets' sur la route /docs/librairies-utiles avec le lien cliquable sur le cercle.
+
+7. Ajout de la 8ᵉ catégorie :  
+- Ajoute la catégorie 'Projet Final' sur la route /docs/projet-final et rends le cercle interactif sur la page principale.
+
+
+
+
+----------------------------------------------------------------
+✍️  Prompt 4 - Réajuster le sidebar.js selon notre besoin
+----------------------------------------------------------------
+
+
+Exemple 1
+
+Je demande d'écrire un prompt pour pour la suite des liens cliquables sur la page d'accueil modifier le sidebar.js 
+afin de réorganiser les catégories, supprimer les anciennes entrées inutiles, 
+et s'assurer que l'ordre des catégories corresponde parfaitement :
+
+---
+
+### ⚠️ Exemple de Prompt à NE PAS Utiliser 
+
+"Modifie le fichier sidebars.js pour n'afficher que les catégories suivantes dans cet ordre exact et supprime toutes les autres catégories inutiles :  
+
+
+
+----------------------------------------------------------------
+===> AJOUTEZ ICI un des 3 plans de formations proposés (formation 1 ou 2 ou 3)
+----------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+Assure-toi que l'ordre est respecté et que les titres soient clairement affichés dans la barre latérale."
+
+
+
+⚠️⚠️⚠️⚠️ Malheureusement, ce prompt  modifiera la structure du sidebar.js 
+et ne permettra pas de maintenir l'autogénération du sidebar.ts
+
+
+
+
+
+
+
+### ✅ Bon Prompt pour Maintenir l'Autogénération du Sidebar de Manière Optimale 
+
+"Ne modifie jamais la configuration du sidebar.ts ni son mode autogenerated. 
+Pour garantir que l'ordre et les noms des catégories correspondent, applique les changements suivants :  
+
+1. Modifie les frontmatters des fichiers markdown concernés pour que les titres, slugs et ID soient corrects.  
+2. Mets à jour les fichiers __category__.json de chaque dossier pour qu'ils utilisent les slugs correspondants suivants :  
+
+
+
+Objectif : 
+"Mettre à jour uniquement les métadonnées des fichiers (slug, title, ID) et les catégories associées sans modifier la logique d’autogénération du sidebar."
+
+
+### Détails Supplémentaires :  
+- Le slug dans le frontmatter doit correspondre à la route.  
+- Les fichiers __category__.json doivent inclure le label correspondant pour afficher les titres dans l’ordre demandé.
+
+
+----------------------------------------------------------------
+===> AJOUTEZ ICI un des 3 plans de formations proposés (formation 1 ou 2 ou 3)
+----------------------------------------------------------------
+
+
+!!!!!!!
+
+Avec ce prompt, tu orientes bien l'outil pour modifier les fichiers de manière précise sans casser la génération automatique du sidebar.ts. 
+
+
+
+
+
+
+
+
+----------------------------------------------------------------
+✍️  Prompt 5- 
+----------------------------------------------------------------
+
+
+Je veux renommer les titres des catégories en ajoutant le numéro de chapitre
+par exemple , 
+le titre Introduction aux Réseaux de Neurones deviendra 
+Chapitre{sidebar_position}-Introduction aux Réseaux de Neurones
+
+
+voici le frontmatter à modifier dans notre prpject docusaurus
+---
+sidebar_position: 1
+title: Introduction aux Réseaux de Neurones
+description: Introduction aux concepts fondamentaux des réseaux de neurones
+---
+
+
+
+
+
+
+
+
+
+
+Prompt Amélioré : 
+
+Tâche:Modifier les titres des frontmatters Docusaurus en ajoutant le numéro de chapitre avant le titre. Le format doit être :  
+
+`Chapitre{sidebar_position} - {title}`  
+
+Par exemple :  
+Le titre `"Introduction aux Réseaux de Neurones"` avec `sidebar_position: 1` devient `"Chapitre 1 - Introduction aux Réseaux de Neurones"`.
+
+Fichier Frontmatter Exemple à Modifier : 
+
+
+---
+sidebar_position: 1
+title: Introduction aux Réseaux de Neurones
+description: Introduction aux concepts fondamentaux des réseaux de neurones
+---
+
+
+Résultat attendu après modification : 
+
+
+---
+sidebar_position: 1
+title: Chapitre 1 - Introduction aux Réseaux de Neurones
+description: Introduction aux concepts fondamentaux des réseaux de neurones
+---
+
+
+Directives à appliquer sur tout le projet :
+1. Parcourir chaque fichier `*.md` ou `*.mdx`.
+2. Identifier le champ `sidebar_position`.
+3. Modifier le champ `title` pour ajouter "Chapitre {sidebar_position} - " avant le titre existant.
+4. Laisser le reste du frontmatter inchangé.
+
+Comment gérer les cas spéciaux : 
+- Si `sidebar_position` est manquant, ignorer la modification du titre.
+- Conserver l’ordre et l’indentation YAML intacte.
+
+---
+
+Ce prompt explique les attentes de manière claire, tout en décrivant le format des changements et des exemples précis.
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------
+Bonus : Exemples de Styles et Dispositions  
+------------------------------------------------------------------------
+
+1. Néomorphique Moderne  
+- Disposition : Cercle symétrique avec effet 3D subtil et ombres douces.  
+- Ambiance : Pastels doux, fond clair et texte foncé.  
+
+2. Glassmorphism Futuriste  
+- Disposition : Ligne en vague horizontale, effets de transparence et flou.  
+- Ambiance : Fond sombre avec dégradés translucides et lignes lumineuses.  
+
+3. Minimaliste avec Accent Coloré  
+- Disposition : Ligne verticale, cercles blancs avec accents vifs.  
+- Ambiance : Fond clair et typographie lisible avec un accent coloré par module.  
+
+4. Dark Mode Énergétique  
+- Disposition : Grille 2 colonnes/4 lignes, cercles avec lueurs néon.  
+- Ambiance : Fond noir, couleurs néon, effets pulsants interactifs.  
+
+5. Paper Cutout Ludique  
+- Disposition : Spirale ascendante avec ombre papier et couleurs pastel.  
+- Ambiance : Tons vifs et animation de bascule au clic.  
+
+6. Ligne du Temps Chronologique  
+- Disposition : Frise horizontale avec connecteurs linéaires.  
+- Ambiance : Noir/blanc avec un seul accent dynamique.  
+
+7. Ruche Hexagonale  
+- Disposition : Hexagones en nid d’abeille avec cercles à l’intérieur.  
+- Ambiance : Noir et doré avec survol doré pour un rendu luxueux.  
+
+8. Galaxy Orbit  
+- Disposition : Orbites animées autour d'un cercle central.  
+- Ambiance : Fond étoilé, arcs lumineux en couleurs de nébuleuse.  
+
